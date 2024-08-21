@@ -22,7 +22,7 @@ public class CSVUtil {
 
     private static final Logger logger = LoggerFactory.getLogger(CSVUtil.class);
 
-    public static List<DataRecord> parseCSVFile(MultipartFile file) throws IOException {
+    public static List<DataRecord> parseCSVFile(MultipartFile file) {
 
         List<DataRecord> records;
         logger.info("parsing csv file");
