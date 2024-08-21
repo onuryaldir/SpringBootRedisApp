@@ -43,25 +43,25 @@
 				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "file",
-							"type": "file",
-							"src": "/path/to/your/file.csv"
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"123\",\r\n  \"codeListCode\": \"ABC\",\r\n  \"displayValue\": \"Display Value 1\",\r\n  \"longDescription\": \"This is a long description.\",\r\n  \"fromDate\": \"2024-01-01\",\r\n  \"toDate\": \"2024-12-31\",\r\n  \"sortingPriority\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/data/upload",
+					"raw": "http://localhost:8080/api/data/add",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"data",
-						"upload"
+						"add"
 					]
 				}
 			},
