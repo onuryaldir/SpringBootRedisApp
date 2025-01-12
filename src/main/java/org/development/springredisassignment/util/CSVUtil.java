@@ -51,7 +51,7 @@ public class CSVUtil {
 
     public static void writeCSVFile(List<DataRecord> records, OutputStream outputStream) throws IOException {
 
-        logger.info("writing to csv file");
+        logger.info("Writing to csv file");
 
         try (CSVPrinter csvPrinter = new CSVPrinter(new OutputStreamWriter(outputStream),
                 CSVFormat.DEFAULT.withHeader(CODE, CODE_LIST_CODE, DISPLAY_VALUE,
